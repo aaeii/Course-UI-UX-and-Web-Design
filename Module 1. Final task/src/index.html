@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭКО-Магазин</title>
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="assets/logo.png" alt="ЭКО-Магазин Логотип">
+        </div>
+        <nav class="header-nav">
+            <a href="#" class="header-link">Главная</a>
+            <a href="#about" class="header-link">О нас</a>
+            <a href="#catalog" class="header-link">Каталог</a>
+            <a href="#delivery" class="header-link">Доставка и оплата</a>
+            <a href="#contacts" class="header-link">Контакты</a>
+
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h1 class="hero-section-title">Экологичные товары для здоровой жизни</h1>
+            <p>Натуральные, органические и биоразлагаемые товары для дома, красоты и здоровья. Мы выбираем только
+                проверенных производителей и заботимся о каждом клиенте.</p>
+            <button class="hero-section-button">Узнать о нас больше</button>
+        </section>
+
+        <section id="about" class="section-light">
+            <h2 class="section_title">О нас</h2>
+            <p>Мы верим, что каждый маленький шаг важен, и предлагаем вам широкий выбор экологичных товаров. Наша цель -
+                предоставить доступ к качественным и безопасным продуктам, которые не наносят вреда окружающей среде.</p>
+            <ul class="about-us-list">
+                <p>Мы гордимся тем, что:</p>
+                <li>Предлагаем широкий ассортимент экологически чистых товаров.</li>
+                <li>Работаем только с проверенными производителями, разделяющими наши ценности.</li>
+                <li>Гарантируем натуральный и органический состав продукции.</li>
+                <li>Используем экологичную упаковку, заботясь о будущем планеты.</li>
+                <li>Поддерживаем местных производителей, внося вклад в развитие устойчивого сельского хозяйства.</li>
+            </ul>
+        </section>
+
+        <section id="catalog" style="scroll-margin-top: 70px;">
+            <h2 class="section_title">Каталог</h2>
+            <section class="services">
+                <div class="services-card">
+                    <img src="assets/эко-магазин 1.png" alt="Органические продукты питания"
+                        class="services-card-image">
+                    <h3 class="services-card-title">Органические продукты питания</h3>
+                    <p class="services-card-description">Органические фрукты, овощи, крупы и многое другое для
+                        здорового питания.</p>
+                </div>
+                <div class="services-card">
+                    <img src="assets/эко-магазин 2.png" alt="Натуральная косметика" class="services-card-image">
+                    <h3 class="services-card-title">Натуральная косметика</h3>
+                    <p class="services-card-description">Косметика без вредных химических добавок для красоты и
+                        здоровья вашей кожи.</p>
+                </div>
+                <div class="services-card">
+                    <img src="assets/эко-магазин 5.png" alt="Эко-товары для дома" class="services-card-image">
+                    <h3 class="services-card-title">Эко-товары для дома</h3>
+                    <p class="services-card-description">Безопасные и экологичные средства для уборки и быта.</p>
+                </div>
+            </section>
+        </section>
+
+        <section id="delivery" class="section-light">
+            <h2 class="section_title">Доставка и оплата</h2>
+            <p>Мы предлагаем различные варианты доставки и оплаты, чтобы сделать ваш опыт покупок максимально удобным.
+                Подробную информацию вы можете найти на странице <a href="#">Доставка и оплата</a>.</p>
+        </section>
+
+        <section id="contacts" class="section-light">
+            <h2 class="section_title">Контакты</h2>
+            <p>Остались вопросы? Свяжитесь с нами любым удобным способом!</p>
+            <p>Телефон: +7 (888) 888-88-88</p>
+            <p>Email: eco-shop@eco-shop.ru</p>
+            <div class="feedback">
+                <div class="form_group">
+                    <input class="input_contact" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form_group">
+                    <input class="input_contact" type="email" id="email" name="email" placeholder="Ваш email" required>
+                </div>
+                <div class="form_group">
+                    <textarea class="input_contact" id="message" name="message" placeholder="Сообщение" rows="5" required></textarea>
+                </div>
+                <button class="btn_contact">Отправить</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>ЭКО-Магазин</p>
+    </footer>
+
+</body>
+
+</html>
