@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+	<link rel="stylesheet" href="src/css/style.css" />
+	<title>ToDo приложение</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="display-4 mb-2" style="display: flex; justify-content: center;">Task Manager</div>
+		<div class="card bg-light">
+			<div class="card-header">Добавить новую задачу</div>
+			<div class="card-body">
+				<form id="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="taskInput" placeholder="Название" required>
+						<input type="text" class="form-control" id="taskDescription" placeholder="Описание">
+						<label for="date">Срок выполнения:</label>
+						<input type="date" id="taskDate" />
+						<br>
+						<label for="priority">Приоритетность:</label>
+						<select id="priority" name="priority">
+							<option value='high'>high</option>
+							<option value='medium'>medium</option>
+							<option value='low'>low</option>
+
+						</select>
+					</div>
+					<button type="submit" class="btn-add ">Добавить</button>
+
+				</form>
+
+			</div>
+		</div>
+		<div>
+			<form id="filter">
+				<label for="dateFilter">Срок выполнения:</label>
+				<select id="dateFilter" name="dateFilter">
+					<option value='dateMax'>По возрастанию</option>
+					<option value='dateMin'>По убыванию</option>
+				</select>
+				<label for="priorityFilter">Приоритет:</label>
+				<select id="priorityFilter" name="priorityFilter">
+					<option value='all'>all</option>
+					<option value='high'>high</option>
+					<option value='medium'>medium</option>
+					<option value='low'>low</option>
+
+				</select>
+			</form>
+		</div>
+
+		<div class="card mb-4">
+			<ul id="tasksList" class="list-group list-group-flush">
+
+			</ul>
+		</div>
+
+	</div>
+	<script src="src/script/script.js"></script>
+</body>
+
+</html>
