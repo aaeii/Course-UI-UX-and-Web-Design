@@ -23,8 +23,8 @@ function sort() {
     const tasks2 = [...tasks];
     const sortOrder = document.querySelector('#dateFilter').value;
     const sortPriority = document.querySelector('#priorityFilter').value;
-    console.log('Выбранный порядок сортировки:', sortOrder);
-    console.log('Выбранный приоритет:', sortPriority);
+    // console.log('Выбранный порядок сортировки:', sortOrder);
+    // console.log('Выбранный приоритет:', sortPriority);
     let sortedTasks;
 
     if (sortOrder === 'dateMax') {
@@ -39,7 +39,7 @@ function sort() {
         sortedTasks = sortedTasks.filter(task => task.priority === sortPriority);
     }
 
-    console.log('Отсортированные и отфильтрованные задачи:', sortedTasks);
+    // console.log('Отсортированные и отфильтрованные задачи:', sortedTasks);
     saveToLocalStorage();
     updateTaskList(sortedTasks);
 }
@@ -89,7 +89,7 @@ function deleteTask(event) {
     const index = tasks.findIndex(function (task) {
         return task.id == id;
     });
-    tasks.splice(index, 1);//удаление из массива
+    tasks.splice(index, 1);//удаление
     parentNode.remove();
     saveToLocalStorage();
 }
@@ -143,14 +143,14 @@ function renderTask(task) {
                     <span class="task-priority" style="background-color: ${priorityColor}">${task.priority}</span>
                     </div>
                     <div>
-                      <span class="task-date">${task.date}</span> 
+                      <span class="task-date" >${task.date}</span> 
                     </div>
 					<div class="task-item__buttons">
-						<button type="button" data-action="done" class="btn-action">
+						<button type="button" data-action="done" class="btn-action" title="Done">
 							<img src="src//img/tick.svg" alt="Done">
 						</button>
-						<button type="button" data-action="delete" class="btn-action">
-							<img src="src/img/cross.svg" alt="Done">
+						<button type="button" data-action="delete" class="btn-action" title="Delete">
+							<img src="src/img/cross.svg" alt="Delete" >
 						</button>
 					</div>
 

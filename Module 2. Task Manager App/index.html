@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8" />
@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 	<link rel="stylesheet" href="src/css/style.css" />
-	<title>ToDo приложение</title>
+	<title>Task Manager</title>
 </head>
 
 <body>
@@ -16,50 +16,48 @@
 
 		<div class="display-4 mb-2" style="display: flex; justify-content: center;">Task Manager</div>
 		<div class="card bg-light">
-			<div class="card-header">Добавить новую задачу</div>
+			<div class="card-header">Add a new task</div>
 			<div class="card-body">
 				<form id="form">
 					<div class="form-group">
-						<input type="text" class="form-control" id="taskInput" placeholder="Название" required>
-						<input type="text" class="form-control" id="taskDescription" placeholder="Описание">
-						<label for="date">Срок выполнения:</label>
-						<input type="date" id="taskDate" />
+						<input type="text" class="form-control" id="taskInput" placeholder="Name" style="margin-bottom: 5px;" required>
+						<input type="text" class="form-control" id="taskDescription" placeholder="Description" style="margin-bottom: 5px;">
+						<label for="date">Due date:</label>
+						<input type="date" id="taskDate" class="border2"/>
 						<br>
-						<label for="priority">Приоритетность:</label>
-						<select id="priority" name="priority">
+						<label for="priority">Priority:</label>
+						<select id="priority" name="priority" class="border2">
 							<option value='high'>high</option>
 							<option value='medium'>medium</option>
 							<option value='low'>low</option>
-
 						</select>
 					</div>
-					<button type="submit" class="btn-add ">Добавить</button>
+					<button type="submit" class="btn-add ">Add</button>
 
 				</form>
 
 			</div>
 		</div>
 		<div>
-			<form id="filter">
-				<label for="dateFilter">Срок выполнения:</label>
-				<select id="dateFilter" name="dateFilter">
-					<option value='dateMax'>По возрастанию</option>
-					<option value='dateMin'>По убыванию</option>
+			<form id="filter" style="margin-top: 5px;">
+				<label for="dateFilter">Due date:</label>
+				<select id="dateFilter" name="dateFilter" class="border2">
+					<option value='dateMax'>ascending</option>
+					<option value='dateMin'>descending</option>
 				</select>
-				<label for="priorityFilter">Приоритет:</label>
-				<select id="priorityFilter" name="priorityFilter">
+				<label for="priorityFilter">Priority:</label>
+				<select id="priorityFilter" name="priorityFilter" class="border2">
 					<option value='all'>all</option>
 					<option value='high'>high</option>
 					<option value='medium'>medium</option>
 					<option value='low'>low</option>
-
 				</select>
+
 			</form>
 		</div>
 
 		<div class="card mb-4">
 			<ul id="tasksList" class="list-group list-group-flush">
-
 			</ul>
 		</div>
 
