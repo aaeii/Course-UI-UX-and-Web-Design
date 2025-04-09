@@ -4,6 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #C1DBB3;
+    
 }
 main{
     padding: 50px;
@@ -78,6 +79,7 @@ main{
     background-color: #ffffffac;
     margin: 20px 0;
     scroll-margin-top: 70px;
+
 }
 
 .section_title {
